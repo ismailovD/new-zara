@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath:  '/zara/' 
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/zara/'
+    : '/'
 }
