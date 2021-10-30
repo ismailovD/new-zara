@@ -10,7 +10,7 @@
                      </label>
                  </div>
                  <div class="col-3">
-                     <label class="photo__card"> 
+                     <label class="photo__card loading__card"> 
                          <p class="text__load">Uploading your files</p>
                          <div class="line__progress">
                              <span class="load__progress"></span>
@@ -102,6 +102,7 @@ export default {
         align-items: center;
         border-radius: 4px;
         height: 100%;
+        cursor: pointer;
     }
 
     .photo__img {
@@ -111,6 +112,7 @@ export default {
     .card__load {
         padding: 0;
         border: none;
+        cursor: default;
     }
     .photo__load {
         width: 100%;
@@ -118,7 +120,9 @@ export default {
     .photo__inp{
         display: none;
     }
-
+    .loading__card {
+        cursor: wait;
+    }
     .photo__text {
         color: #473e9e;
         cursor: pointer;
